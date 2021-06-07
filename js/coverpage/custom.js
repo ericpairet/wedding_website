@@ -40,11 +40,11 @@ $(document).ready(function() {
 						{ src: 'img/coverpage/20171216_114433.jpg' },
 						{ src: 'img/coverpage/20181022_093836.jpg' },
 						{ src: 'img/coverpage/20200831_190913.jpg' }
-				]
-        // ],
-        // timer: false,
-        // transition: [ 'zoomIn', ],
-        // animation: ['kenburns']
+				// ]
+        ],
+        timer: false// ,
+        // transition: ['zoomIn'], // transitions=["fade","fade2","blur","blur2","flash","flash2","negative","negative2","burn","burn2","slideLeft","slideLeft2","slideRight","slideRight2","slideUp","slideUp2","slideDown","slideDown2","zoomIn","zoomIn2","zoomOut","zoomOut2","swirlLeft","swirlLeft2","swirlRight","swirlRight2"]
+        // animation: ['kenburns'] // animations=["kenburns","kenburnsLeft","kenburnsRight","kenburnsUp","kenburnsUpLeft","kenburnsUpRight","kenburnsDown","kenburnsDownLeft","kenburnsDownRight"]
     });
   });
 
