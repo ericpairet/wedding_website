@@ -183,6 +183,12 @@ a:focus {
   text-shadow: 2px 2px 2px #333;
 }
 
+.tm-hero-subtitle {
+  font-size: 2rem;
+  text-shadow: 2px 2px 2px #333;
+	text-transform: uppercase;
+}
+
 .tm-intro-next {
   position: absolute;
   bottom: 100px;
@@ -323,7 +329,7 @@ a:focus {
 }
 
 .tm-gallery-item {
-  margin: 0 15px;
+  margin: 10px 15px;
 }
 
 .slick-dots {
@@ -588,8 +594,8 @@ p {
   }
 
   .navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
@@ -673,3 +679,34 @@ p {
     margin-top: 20px;
   }
 }
+
+/* .img-fluid {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+} */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  align-items: stretch;
+  }
+/* .grid > article {
+  border: 0px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+} */
+.grid > article img {
+  max-width: 100%;
+  border: 10px solid #555;
+}
+.text {
+  padding: 0 0px 0px;
+}
+.text > button {
+  background: gray;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  }
