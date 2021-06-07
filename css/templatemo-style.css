@@ -699,6 +699,7 @@ p {
 .grid > article img {
   max-width: 100%;
   border: 10px solid #555;
+	margin-bottom: 15px;
 }
 .text {
   padding: 0 0px 0px;
@@ -709,4 +710,4 @@ p {
   color: white;
   padding: 10px;
   width: 100%;
-  }
+}
