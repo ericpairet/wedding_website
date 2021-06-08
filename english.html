@@ -26,7 +26,8 @@
       <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
         <div class="container">
           <div class="tm-next">
-              <a href="index.html" class="navbar-brand">HOME</a>
+              <!-- <a href="index.html" class="navbar-brand">HOME</a> -->
+							<span class="navbar-brand" style="cursor:pointer" onclick="javascript:showWindow('index.html');">HOME</span>
           </div>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,6 +50,8 @@
 							<li class="nav-item">
                   <a class="nav-link tm-nav-link" href="#whattodo">What To Do</a>
               </li>
+
+
 							<!-- <li class="nav-item">
                   <a class="nav-link tm-nav-link" href="#contact">Contact Us</a>
               </li> -->
@@ -371,14 +374,21 @@
 
 
 
-
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
 
+		<!-- <script src="js/coverpage/jquery.js"></script> -->
+
+		<script>
+				function showWindow(url) {
+		    window.open(url, "_self", "directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes");
+		}
+		</script>
+
+    <script>
       function getOffSet(){
         var _offset = 450;
         var windowHeight = window.innerHeight;
