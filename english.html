@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>The Town HTML CSS Template</title>
+
+		<!-- start of RSVP stuff -->
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/rsvp.css">
+		<!-- end of RSVP stuff -->
+
     <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
@@ -334,56 +341,53 @@
 							</p>
 					</div>
 				</div>
-			</div>
+
+				<div class="row">
+					<div class="text-center col-12">
+						<form class="gform pure-form pure-form-stacked" method="POST" data-email="ericpairet@gmail.com"
+						action="https://script.google.com/macros/s/AKfycbxQCAHadQRqOt9_7dhoZAcf3ruSFzwNOOsTW5YniZhQaRDtS43G89A86yC-eFTl1MrSmQ/exec">
+
+							<div class="form-elements">
+								<fieldset class="pure-group">
+									<label for="name">Name: </label>
+									<input id="name" name="name" placeholder="What your Mom calls you" />
+								</fieldset>
+
+								<fieldset class="pure-group">
+									<label for="message">Message: </label>
+									<textarea id="message" name="message" rows="10"
+									placeholder="Tell us what's on your mind..."></textarea>
+								</fieldset>
+
+								<fieldset class="pure-group">
+									<label for="email"><em>Your</em> Email Address:</label>
+									<input id="email" name="email" type="email" value=""
+									required placeholder="your.name@email.com"/>
+								</fieldset>
+
+								<fieldset class="pure-group">
+									<label for="color">Favourite Color: </label>
+									<input id="color" name="color" placeholder="green" />
+								</fieldset>
+
+								<fieldset class="pure-group honeypot-field">
+									<label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+									<input id="honeypot" type="text" name="honeypot" value="" />
+								</fieldset>
+
+								<button class="button-success pure-button button-xlarge">
+									<i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+							</div>
+
+							<!-- Customise the Thankyou Message People See when they submit the form: -->
+							<div class="thankyou_message" style="display:none;">
+								<h2>Thanks for contacting us!</h2>
+							</div>
+						</form>
+					</div>
+				</div>
 		</section>
-
-
-		<!-- CONTACT -->
-    <!-- <section id="contact" class="tm-section-pad-top tm-parallax-2">
-      <div class="container tm-container-contact">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="mb-4 tm-section-title">Contact Us</h2>
-                <div class="mb-5 tm-underline">
-                  <div class="tm-underline-inner"></div>
-                </div>
-                <p class="mb-5">
-                  Nullam tincidunt, lacus a suscipit luctus, elit turpis tincidunt dui,
-                  non tempus sem turpis vitae lorem. Maecenas eget odio in sapien ultrices
-                  viverra vitae vel leo. Curabitur at elit eu risus pharetra pellentesque
-                  at at velit.
-                </p>
-            </div>
-
-            <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-              <a href="tel:0100200340" class="tm-contact-item-link">
-                  <i class="fas fa-3x fa-phone mr-4"></i>
-                  <span class="mb-0">010-020-0340</span>
-              </a>
-            </div>
-            <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-              <a href="mailto:info@company.co" class="tm-contact-item-link">
-                  <i class="fas fa-3x fa-envelope mr-4"></i>
-                  <span class="mb-0">info@company.co</span>
-              </a>
-            </div>
-            <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-              <a href="https://www.google.com/maps" class="tm-contact-item-link">
-                  <i class="fas fa-3x fa-map-marker-alt mr-4"></i>
-                  <span class="mb-0">Location on Maps</span>
-              </a>
-            </div>
-            <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-              <form action="" method="get">
-                <input name="email" type="email" placeholder="Subscribe your email" class="tm-input" required />
-                <button type="submit" class="btn tm-btn-submit">Submit</button>
-              </form>
-            </div>
-        </div>
-      </div>
-    </section> -->
-
-
+		<script data-cfasync="false" src="js/rsvp/form-submission-handler.js"></script>
 
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="slick/slick.min.js"></script>
