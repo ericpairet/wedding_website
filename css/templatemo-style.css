@@ -43,7 +43,8 @@ a:focus {
 }
 
 .tm-text-primary {
-  color: #3496d8;
+  /* color: #3496d8; */
+	color: #000000;
 }
 
 .tm-font-big {
@@ -299,27 +300,30 @@ a:focus {
 /* Introduction */
 
 .tm-section-title {
-  font-size: 6rem;
+  font-size: 9rem;
   font-weight: normal;
-	font-family:'Allura';
+	font-family:'Qwigley';
 	line-height: 30%;
 }
 
 .tm-section-subtitle {
   font-size: 4rem;
   font-weight: normal;
-	font-family:'Allura';
+	font-family:'Qwigley';
 }
 
 .tm-note-text {
-  font-size: 2rem;
+	/* font-family: "Times New Roman", Times, serif; */
+  font-size: 2.4rem;
+	font-weight: bold;
   line-height: 1.4;
 	text-transform: uppercase;
 }
 
 .tm-subnote-text {
-  font-size: 1.2rem;
-  line-height: 1.4;
+	font-family: "Times New Roman", Times, serif;;
+  font-size: 1.7rem;
+  line-height: 1.1;
 	text-transform: uppercase;
 }
 
@@ -526,12 +530,13 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-underline {
-  border-top: 2px solid #3496d8;
+  /* border-top: 2px solid #3496d8; */
+	border-top: 1.5px solid #000000;
   height: 8px;
   width: 50%;
 	left: 25%;
 	position: relative;
-	margin-bottom: 50px;
+	padding-bottom: 40px;
 }
 
 .tm-underline-inner {
@@ -732,4 +737,10 @@ p {
   color: white;
   padding: 10px;
   width: 100%;
+}
+
+.gettingthere-link {
+	/* color:#8f8f8f; */
+	color:#000000;
+	text-decoration: underline;
 }
