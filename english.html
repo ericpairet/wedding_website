@@ -334,40 +334,64 @@
 					<div class="text-center col-12">
 							<h2 class="tm-text-primary tm-section-title mb-4">RSVP here</h2>
 							<div class="mb-5 tm-underline"></div>
-							<p class="mx-auto tm-work-description">
+							<!-- <p class="mx-auto tm-work-description">
 								"Curabitur ac orci ac lorem blandit volutpat. Sed ac sodales nibh, ut
 								porttitor elit. Sed id dui mi. Vestibulum ante ipsum primis in faucibus
 								orci luctus et ultrices posuere cubilia."
-							</p>
+							</p> -->
 					</div>
 				</div>
 
 				<div class="row">
-					<div class="text-center col-12">
+					<div class="text-center col-2"></div>
+					<div class="text-center col-8">
 						<form class="gform pure-form pure-form-stacked" method="POST" data-email="ericpairet@gmail.com"
-						action="https://script.google.com/macros/s/AKfycbxQCAHadQRqOt9_7dhoZAcf3ruSFzwNOOsTW5YniZhQaRDtS43G89A86yC-eFTl1MrSmQ/exec">
+						action="https://script.google.com/macros/s/AKfycbzRTM8IoyqWqqofROhlAS628h3lObQyimuhBsF6Frh7djEt--WflFWKUSyl7sRujkUOGA/exec">
 
 							<div class="form-elements">
 								<fieldset class="pure-group">
-									<label for="name">Name: </label>
-									<input id="name" name="name" placeholder="What your Mom calls you" />
+									<label for="name">Name:*</label>
+									<input id="name" name="name" required placeholder="What your Mom calls you" />
 								</fieldset>
 
-								<fieldset class="pure-group">
-									<label for="message">Message: </label>
-									<textarea id="message" name="message" rows="10"
-									placeholder="Tell us what's on your mind..."></textarea>
-								</fieldset>
+								<!-- <fieldset class="pure-group">
+									<label for="code">Code:*</label>
+									<input id="code" name="code" required placeholder="" />
+								</fieldset> -->
 
 								<fieldset class="pure-group">
-									<label for="email"><em>Your</em> Email Address:</label>
+									<label for="email">Email:*</label>
 									<input id="email" name="email" type="email" value=""
 									required placeholder="your.name@email.com"/>
 								</fieldset>
 
 								<fieldset class="pure-group">
-									<label for="color">Favourite Color: </label>
-									<input id="color" name="color" placeholder="green" />
+									<label for="attendance">Are you attending?*</label>
+									<input id="attendance" name="attendance"
+									required placeholder="yes/no"/>
+								</fieldset>
+
+								<fieldset class="pure-group">
+									<label for="whoelse">Who else is coming with you?</label>
+									<label for="whoelse">please list the name of each family member</label>
+									<input id="whoelse" name="whoelse" placeholder="" />
+								</fieldset>
+
+								<fieldset class="pure-group">
+									<label for="whenarriving">When will you arrive in Catalonia?</label>
+									<label for="whenarriving">please list the name of each family member</label>
+									<input id="whenarriving" name="whenarriving" placeholder="" />
+								</fieldset>
+
+								<fieldset class="pure-group">
+									<label for="helpneeded">Do you need with help with transportation during your stay?</label>
+									<label for="helpneeded">some acclaration...</label>
+									<input id="helpneeded" name="helpneeded" placeholder="" />
+								</fieldset>
+
+								<fieldset class="pure-group">
+									<label for="message">Message</label>
+									<textarea id="message" name="message" placeholder=""></textarea>
 								</fieldset>
 
 								<fieldset class="pure-group honeypot-field">
@@ -376,7 +400,8 @@
 								</fieldset>
 
 								<button class="button-success pure-button button-xlarge">
-									<i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+									SUBMIT
+								</button>
 							</div>
 
 							<!-- Customise the Thankyou Message People See when they submit the form: -->
@@ -385,6 +410,7 @@
 							</div>
 						</form>
 					</div>
+					<div class="text-center col-2"></div>
 				</div>
 		</section>
 		<script data-cfasync="false" src="js/rsvp/form-submission-handler.js"></script>
@@ -395,9 +421,17 @@
     <script src="js/jquery.singlePageNav.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
+		<!-- make HOME button return to main website, in-place -->
 		<script>
 			function showWindow(url) {
 		    window.open(url, "_self", "directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes");
+			}
+		</script>
+
+		<!-- prevent "confirm resubmission pop-up after RSVP" -->
+		<script>
+			if ( window.history.replaceState ) {
+			  window.history.replaceState( null, null, window.location.href );
 			}
 		</script>
 
