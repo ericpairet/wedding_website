@@ -29,6 +29,13 @@ a:focus {
   outline: none;
 }
 
+.row {
+	margin-right: 0px;
+	margin-left: 0px;
+  padding-right: 0px;
+	padding-left: 0px;
+}
+
 .btn {
   padding: 8px 32px;
 }
@@ -194,8 +201,8 @@ a:focus {
 }
 
 .tm-hero-subtitle {
-  /* font-size: 1.7rem; */
-  font-size: 1.6vw;
+  font-size: 1.7rem;
+  /* font-size: 1.6vw; */
   /* text-shadow: 2px 2px 2px #333; */
 	text-transform: uppercase;
 }
@@ -310,27 +317,27 @@ a:focus {
 /* Introduction */
 
 .tm-section-title {
-  /* font-size: 9rem; */
-  font-size: 7vw;
+  font-size: 9rem;
+  /* font-size: 7vw; */
   font-weight: normal;
 	font-family:'Qwigley';
-	line-height: 30%;
+	line-height: 60%;
 }
 
 .tm-section-subtitle {
-  /* font-size: 4rem; */
-  font-size: 2vw;
+  font-size: 4rem;
+  /* font-size: 2vw; */
   font-weight: normal;
 	font-family:'Qwigley';
 }
 
 .tm-section-subtitle-other {
-  /* font-family: "Abel", Times, serif; */
-	font-family: "Times New Roman", Times, serif;
-  /* font-size: 2.4rem; */
-  font-size: 1.8vw;
+  font-family: "Abel",Serif;
+	/* font-family: "Times New Roman", Times, serif; */
+  font-size: 2.4rem;
+  /* font-size: 1.8vw; */
   font-weight: normal;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 .tm-section-subsubtitle-other {
@@ -350,15 +357,15 @@ a:focus {
 
 .tm-subnote-text {
 	font-family: "Times New Roman", Times, serif;
-  /* font-size: 1.7rem; */
-  font-size: 1.4vw;
+  font-size: 1.7rem;
+  /* font-size: 1.4vw; */
   line-height: 1.1;
 	text-transform: uppercase;
 }
 
 .tm-intro-text {
-  /* font-size: 1.2rem; */
-  font-size: 1.3vw;
+  font-size: 1.2rem;
+  /* font-size: 1.3vw; */
   line-height: 1.4;
 }
 
@@ -747,7 +754,7 @@ p {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 40px;
+  grid-gap: 3rem;
   align-items: stretch;
   }
 /* .grid > article {
@@ -761,7 +768,7 @@ p {
 }
 .text {
   padding: 0 0px 0px;
-  font-size:1.2vw;
+  /* font-size:1.2vw; */
 }
 .text > button {
   background: gray;
@@ -773,7 +780,7 @@ p {
 
 .gettingthere-link {
 	/* color:#8f8f8f; */
-  font-size:1.3vw;
+  /* font-size:1.3vw; */
 	color:#000000;
 	text-decoration: underline;
 }
@@ -783,4 +790,16 @@ p {
 	font-size:1.6rem;
 	color:#000000;
 	text-decoration: underline;
+}
+
+@media (min-width: 200px) {
+  .grid { grid-template-columns: repeat(1, 1fr); }
+}
+
+@media (min-width: 600px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
 }

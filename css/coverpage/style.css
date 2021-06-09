@@ -141,7 +141,12 @@ a:hover, a:active, a:focus {
   box-sizing: border-box;
 }
 
-
+.row {
+	margin-right: 0px;
+	margin-left: 0px;
+  padding-right: 0px;
+	padding-left: 0px;
+}
 
 /*---------------------------------------
     All Section style
