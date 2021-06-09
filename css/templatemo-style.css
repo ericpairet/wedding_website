@@ -88,7 +88,8 @@ a:focus {
 
 .navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
-  color: #3496d8;
+  /* color: #3496d8; */
+	color: #000000;
 }
 
 .tm-navbar.scroll .navbar-brand {
@@ -110,7 +111,8 @@ a:focus {
 .tm-navbar.scroll .tm-nav-link:hover,
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
-  color: #3496d8;
+  /* color: #3496d8; */
+	color: #000000;
 }
 
 .navbar-toggler {
@@ -312,6 +314,20 @@ a:focus {
 	font-family:'Qwigley';
 }
 
+.tm-section-subtitle-other {
+	font-family: "Times New Roman", Times, serif;
+  font-size: 2.4rem;
+  font-weight: normal;
+	text-transform: uppercase;
+}
+
+.tm-section-subsubtitle-other {
+	font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  font-weight: normal;
+	text-transform: uppercase;
+}
+
 .tm-note-text {
 	/* font-family: "Times New Roman", Times, serif; */
   font-size: 2.4rem;
@@ -321,7 +337,7 @@ a:focus {
 }
 
 .tm-subnote-text {
-	font-family: "Times New Roman", Times, serif;;
+	font-family: "Times New Roman", Times, serif;
   font-size: 1.7rem;
   line-height: 1.1;
 	text-transform: uppercase;
@@ -742,6 +758,13 @@ p {
 
 .gettingthere-link {
 	/* color:#8f8f8f; */
+	color:#000000;
+	text-decoration: underline;
+}
+
+.thankyou-link {
+	/* color:#8f8f8f; */
+	font-size:1.6rem;
 	color:#000000;
 	text-decoration: underline;
 }
