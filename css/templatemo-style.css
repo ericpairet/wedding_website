@@ -139,7 +139,8 @@ a:focus {
 #hero {
   /* background-image: url(../img/the-town-bg-01.jpg); */
 	/* background-image: url(../img/20170807_204745.jpg); */
-  background-image: url(../img/maldives_trans.png);
+  /* background-image: url(../img/maldives_trans.png); */
+  background-image: url(../img/new.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   min-height: 375px;
@@ -160,7 +161,7 @@ a:focus {
 
 @media (min-height: 500px) and (max-height: 679px) {
   #hero {
-    background-position: center -00px;
+    background-position: center -400px;
   }
 }
 
