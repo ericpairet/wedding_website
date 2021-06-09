@@ -145,6 +145,9 @@ a:focus {
   height: 100vh;
   min-height: 375px;
   position: relative;
+  /* width: 100%;
+  height: auto;
+  background-size: cover; */
 }
 
 @media (min-height: 830px) {
@@ -181,7 +184,8 @@ a:focus {
 }
 
 .tm-hero-text-container-inner {
-  margin-top: -150px;
+  margin-top: -5%;
+  /* margin-top: -150px; */
 }
 
 .tm-hero-title {
@@ -190,7 +194,8 @@ a:focus {
 }
 
 .tm-hero-subtitle {
-  font-size: 1.7rem;
+  /* font-size: 1.7rem; */
+  font-size: 1.6vw;
   /* text-shadow: 2px 2px 2px #333; */
 	text-transform: uppercase;
 }
@@ -305,21 +310,25 @@ a:focus {
 /* Introduction */
 
 .tm-section-title {
-  font-size: 9rem;
+  /* font-size: 9rem; */
+  font-size: 7vw;
   font-weight: normal;
 	font-family:'Qwigley';
 	line-height: 30%;
 }
 
 .tm-section-subtitle {
-  font-size: 4rem;
+  /* font-size: 4rem; */
+  font-size: 2vw;
   font-weight: normal;
 	font-family:'Qwigley';
 }
 
 .tm-section-subtitle-other {
+  /* font-family: "Abel", Times, serif; */
 	font-family: "Times New Roman", Times, serif;
-  font-size: 2.4rem;
+  /* font-size: 2.4rem; */
+  font-size: 1.8vw;
   font-weight: normal;
 	text-transform: uppercase;
 }
@@ -341,13 +350,15 @@ a:focus {
 
 .tm-subnote-text {
 	font-family: "Times New Roman", Times, serif;
-  font-size: 1.7rem;
+  /* font-size: 1.7rem; */
+  font-size: 1.4vw;
   line-height: 1.1;
 	text-transform: uppercase;
 }
 
 .tm-intro-text {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
+  font-size: 1.3vw;
   line-height: 1.4;
 }
 
@@ -750,6 +761,7 @@ p {
 }
 .text {
   padding: 0 0px 0px;
+  font-size:1.2vw;
 }
 .text > button {
   background: gray;
@@ -761,6 +773,7 @@ p {
 
 .gettingthere-link {
 	/* color:#8f8f8f; */
+  font-size:1.3vw;
 	color:#000000;
 	text-decoration: underline;
 }
