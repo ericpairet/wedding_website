@@ -332,7 +332,7 @@ a:focus {
 }
 
 .tm-section-subtitle-other {
-  font-family: "Abel",Serif;
+  font-family: 'Abel',Serif;
 	/* font-family: "Times New Roman", Times, serif; */
   font-size: 2.4rem;
   /* font-size: 1.8vw; */
@@ -341,7 +341,8 @@ a:focus {
 }
 
 .tm-section-subsubtitle-other {
-	font-family: "Times New Roman", Times, serif;
+	/* font-family: "Times New Roman", Times, serif; */
+  font-family: 'Abel',Serif;
   font-size: 2rem;
   font-weight: normal;
 	text-transform: uppercase;
@@ -356,7 +357,8 @@ a:focus {
 }
 
 .tm-subnote-text {
-	font-family: "Times New Roman", Times, serif;
+	/* font-family: "Times New Roman", Times, serif; */
+  font-family: 'Abel';
   font-size: 1.7rem;
   /* font-size: 1.4vw; */
   line-height: 1.1;
