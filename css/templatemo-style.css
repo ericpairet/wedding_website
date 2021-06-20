@@ -147,7 +147,7 @@ a:focus {
   /* background-image: url(../img/the-town-bg-01.jpg); */
 	/* background-image: url(../img/20170807_204745.jpg); */
   /* background-image: url(../img/maldives_trans.png); */
-  background-image: url(../img/new.jpg);
+  background-image: url(../img/new_bigger.png);
   background-repeat: no-repeat;
   height: 100vh;
   min-height: 375px;
@@ -191,7 +191,7 @@ a:focus {
 }
 
 .tm-hero-text-container-inner {
-  margin-top: -5%;
+  margin-top: -8%;
   /* margin-top: -150px; */
 }
 
