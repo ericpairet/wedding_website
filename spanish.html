@@ -453,6 +453,7 @@
 
       function setParallaxPosition($doc, multiplier, $object){
         var offset = getOffSet();
+				offset = 0;
         var from_top = $doc.scrollTop(),
           bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
         $object.css({"background-position" : bg_css });
