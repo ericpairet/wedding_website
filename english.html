@@ -81,7 +81,7 @@
             <!-- 9vw -->
             <p style="font-family:'Abel'" class="tm-hero-subtitle">
               May 21st 2022
-							<br/><!--Sant Miquel de Campmajor,-->Catalunya, España
+							<br/><!--Sant Miquel de Campmajor,-->Catalonia, Spain
             </p>
         </div>
       </div>
@@ -455,12 +455,16 @@
         if(windowHeight > 830) {
           _offset = 210;
         }
+				if(windowHeight > 1000) {
+          _offset = 0;
+        }
 
         return _offset;
       }
 
       function setParallaxPosition($doc, multiplier, $object){
         var offset = getOffSet();
+				offset = 0;
         var from_top = $doc.scrollTop(),
           bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
         $object.css({"background-position" : bg_css });
