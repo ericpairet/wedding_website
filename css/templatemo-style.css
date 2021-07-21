@@ -144,15 +144,16 @@ a:focus {
 /* Hero */
 
 #hero {
-  /* background-image: url(../img/the-town-bg-01.jpg); */
 	/* background-image: url(../img/20170807_204745.jpg); */
   /* background-image: url(../img/maldives_trans.png); */
-  background-image: url(../img/new_bigger.png);
+  /* background-image: url(../img/new_bigger.jpg); */
+	background-image: url(../img/centered.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   min-height: 375px;
   position: relative;
-  /* width: 100%;
+	/* scale: 1.2; */
+	/* width: 100%;
   height: auto;
   background-size: cover; */
 }
