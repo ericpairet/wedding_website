@@ -151,23 +151,25 @@
 						<div class="tm-intro-text-container">
 							<!-- <h2 class="tm-text-primary mb-4 tm-note-text">Transportation</h2> -->
               <!-- <h2 class="tm-text-primary tm-section-subtitle-other mb-4">TRANSPORTATION</h2> -->
-							<h2 class="tm-text-primary mb-4">TRANSPORTATION</h2>
-							<p class="mx-auto tm-subnote-text">We recommend flying into the following airports:</p>
+							<h2 class="tm-text-primary mb-4"><i class="fa fa-rocket" aria-hidden="true"></i> TRANSPORTATION</h2>
+							<p class="mx-auto tm-subsubnote-text">We recommend flying into the following airports:</p>
 
 							<p class="mb-4 tm-intro-text">
-								<a class="gettingthere-link" href="https://www.aena.es/es/josep-tarradellas-barcelona-el-prat.html" target="_blank">Josep Tarradellas Barcelona–El Prat Airport</a> </br>
+								<i class="fa fa-plane" aria-hidden="true"></i> <a class="gettingthere-link" href="https://www.aena.es/es/josep-tarradellas-barcelona-el-prat.html" target="_blank">Josep Tarradellas Barcelona–El Prat Airport</a> </br>
 								International flights </br>
 								2 hours by car to the wedding place
 							</p>
 
 							<p class="mb-4 tm-intro-text">
-								<a class="gettingthere-link" href="https://www.aena.es/es/girona-costa-brava.html" target="_blank">Girona–Costa Brava Airport</a> </br>
+								<i class="fa fa-plane" aria-hidden="true"></i> <a class="gettingthere-link" href="https://www.aena.es/es/girona-costa-brava.html" target="_blank">Girona–Costa Brava Airport</a> </br>
 								European flights </br>
 								1 hour by car to the wedding place
 							</p>
 
 							<p class="mb-4 tm-intro-text">
-								<a class="gettingthere-link" href="http://www.teisa-bus.com/" target="_blank">Teisa</a> and <a class="gettingthere-link" href="https://www.sagales.com/en" target="_blank">Sagales</a> bus companies offer excellent service between towns. Car rental from your favourite retailer is also an option.
+								<i class="fa fa-bus" aria-hidden="true"></i> <a class="gettingthere-link" href="http://www.teisa-bus.com/" target="_blank">Teisa</a> and <a class="gettingthere-link" href="https://www.sagales.com/en" target="_blank">Sagales</a> offer excellent bus service between towns.
+								</br>
+								<i class="fa fa-car" aria-hidden="true"></i> Car rental from your favourite retailer is also an option.
 								<!-- </br>
 								</br>
 								If you need help organizing a transfer from the airport to the wedding place, we can help. Contact Paola at +44 7412 652412, Èric at +44 7597 059773 or email us at ericpairet at gmail dot com -->
@@ -176,10 +178,10 @@
 					</div>
 					<div class="col-lg-6" style="text-align:center;">
 						<div class="tm-intro-text-container">
-							<!-- <h2 class="tm-text-primary mb-4 tm-note-text">Accomodation</h2> -->
-							<!-- <h2 class="tm-text-primary tm-section-subtitle-other mb-4">Accomodation</h2> -->
-              <h2 class="tm-text-primary mb-4">ACCOMODATION</h2>
-							<p class="mx-auto tm-subnote-text">We recommend staying in Girona:</p>
+							<!-- <h2 class="tm-text-primary mb-4 tm-note-text">Accommodation</h2> -->
+							<!-- <h2 class="tm-text-primary tm-section-subtitle-other mb-4">Accommodation</h2> -->
+              <h2 class="tm-text-primary mb-4"><i class="fa fa-home" aria-hidden="true"></i> ACCOMMODATION</h2>
+							<p class="mx-auto tm-subsubnote-text">We recommend staying in Girona:</p>
 							<p class="mb-4 tm-intro-text">
 								<!-- We recommend visiting around as much as you can! There are <a class="gettingthere-link" href="#whattodo">astonishing towns</a> all around within a 30 min drive from Girona. -->
 								Girona is a middle-sized city with most of the amenities you might need. Girona is conveniently placed at the centre of many <a class="gettingthere-link" href="#whattodo">astonishing towns</a> at reach within a 30 minutes drive. We encourage you visiting around as much as you can!
@@ -196,7 +198,12 @@
 						<p class="mb-4 tm-intro-text">
 							If you need help organising a transfer from the airport to the wedding place or arranging accommodation, we can help.
 							</br>
-							Contact Paola at +44 7412 652412, Èric at +44 7597 059773, or email us at ericpairet at gmail dot com.
+<!--							Contact Paola at +44 7412 652412, Èric at +44 7597 059773, or email us at ericpairet at gmail dot com.-->
+<!--							<i class="fa fa-phone" aria-hidden="true"></i> -->
+							<i class="fa fa-whatsapp" aria-hidden="true"></i> +44 7412 652412 (Paola) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--							<i class="fa fa-phone" aria-hidden="true"></i> -->
+							<i class="fa fa-whatsapp" aria-hidden="true"></i> +44 7597 059773 (Èric) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<i class="fa fa-envelope" aria-hidden="true"></i> ericpairet at gmail dot com
 						</p>
 					</div>
 				</div>
@@ -457,16 +464,16 @@
         if(windowHeight > 830) {
           _offset = 210;
         }
-				if(windowHeight > 1000) {
-          _offset = 0;
-        }
+        // if(windowHeight > 1000) {
+        //   _offset = 0;
+        // }
 
         return _offset;
       }
 
       function setParallaxPosition($doc, multiplier, $object){
         var offset = getOffSet();
-				offset = 0;
+		offset = 0;
         var from_top = $doc.scrollTop(),
           bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
         $object.css({"background-position" : bg_css });
@@ -518,10 +525,9 @@
         // Detect window scroll and update navbar
         $(window).scroll(function(e){
           if($(document).scrollTop() > 120) {
-            $('.tm-navbar').addClass("scroll");
+			  $('.tm-navbar').addClass("scroll");
           } else {
-            $('.tm-navbar').removeClass("scroll");
-          }
+            $('.tm-navbar').removeClass("scroll");}
         });
 
         // Close mobile menu after click

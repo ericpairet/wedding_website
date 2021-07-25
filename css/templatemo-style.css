@@ -409,6 +409,14 @@ a:focus {
 	text-transform: uppercase;
 }
 
+.tm-subsubnote-text {
+  /* font-family: "Times New Roman", Times, serif; */
+  font-family: 'Abel';
+  font-size: 1.5rem;
+  /* font-size: 1.4vw; */
+  line-height: 1.1;
+}
+
 .tm-intro-text {
   font-size: 1.2rem;
   /* font-size: 1.3vw; */
