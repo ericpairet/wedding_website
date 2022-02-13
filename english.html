@@ -66,10 +66,10 @@
               </li>
 							<!-- <li class="nav-item">
                   <a style="font-family:'Abel'" class="nav-link tm-nav-link" href="#thankyou">Thank You</a>
-              </li>
+              </li> -->
 							<li class="nav-item">
                   <a style="font-family:'Abel'" class="nav-link tm-nav-link" href="#rsvphere">RSVP Here</a>
-              </li> -->
+              </li>
             </ul>
           </div>
         </div>
@@ -82,7 +82,7 @@
 						<h5 class="wow fadeInUp" data-wow-delay="0.6s" style="font-size:100px;font-size:35vmin;font-size:min(35vmin, 180px);line-height:80%;font-family:'Qwigley';font-weight:100">Paola &amp; Èric</h5>
             <!-- 9vw -->
             <p style="font-family:'Abel'" class="tm-hero-subtitle">
-              May 21st 2022
+              May 21<sup>st</sup> 2022
 							<br/><!--Sant Miquel de Campmajor,-->Catalonia, Spain
             </p>
         </div>
@@ -300,7 +300,7 @@
 
 
 		<!-- THANK YOU -->
-		<!-- <section id="thankyou" class="tm-section-pad-top" style="background:rgba(255, 243, 228, 0.7)">
+		<section id="thankyou" class="tm-section-pad-top" style="background:rgba(255, 243, 228, 0.7)">
       <div class="container">
 				<div class="row">
 					<div class="text-center col-12">
@@ -349,20 +349,23 @@
 					<div class="col-lg-1"></div>
 				</div>
 			</div>
-		</section> -->
+		</section>
 
 		<!-- RSVP HERE -->
 		<!-- spreadsheet is: https://docs.google.com/spreadsheets/d/1ID99pmrkHAGyM6zApxYcoApMOw6dO4t0v0acN24hBas/edit#gid=0 -->
 		<!-- script for spreadsheet is: https://script.google.com/home/projects/1y_lHgHvtZU3C9p0VPpGP56zZHPp5VSog5L5iOhmejm2r_UfhkvYlX1nN/edit -->
+    <!-- API: https://getbootstrap.com/docs/4.0/components/forms/ -->
 		<!-- info 0: https://github.com/rampatra/wedding-website -->
 		<!-- info 1: https://blog.rampatra.com/wedding-website -->
 		<!-- info 2: https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server#3-set-the-to_address-in-the-script -->
-		<!-- <section id="rsvphere" class="tm-section-pad-top" style="background-image:url(img/tapete.jpg)">
+		<section id="rsvphere" class="tm-section-pad-top" style="background-image:url(img/tapete.jpg)">
 			<div class="container">
 				<div class="row">
 					<div class="text-center col-12">
 							<h2 class="tm-text-primary tm-section-title mb-4">RSVP here</h2>
 							<div class="mb-5 tm-underline"></div>
+              <h2 class="tm-text-primary mb-4 tm-section-subtitle-other">Please reply by the 20<sup>th</sup> of March.<br></br></h2>
+              <!-- <p class="mx-auto tm-subnote-text mb-4">Please reply by the 20<sup>th</sup> of March.<br></br></p> -->
 					</div>
 				</div>
 
@@ -373,41 +376,71 @@
 						action="https://script.google.com/macros/s/AKfycbzRTM8IoyqWqqofROhlAS628h3lObQyimuhBsF6Frh7djEt--WflFWKUSyl7sRujkUOGA/exec">
 
 							<div class="form-elements">
-								<fieldset class="pure-group">
-									<label for="name">Name:*</label>
-									<input id="name" name="name" required placeholder="What your Mom calls you" />
+
+                <fieldset class="pure-group">
+                  <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                      <!-- <label for="validationCustom01">Full name*</label> -->
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Full name*" value="" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <!-- <label for="validationCustom02">Email*</label> -->
+                      <input type="text" class="form-control" id="email" name="email" placeholder="Email*" value="" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <!-- <label for="exampleFormControlSelect1">Are you attending?*</label> -->
+                      <select class="form-control" id="attendance" name="attendance" required>
+                        <option value="" selected disabled hidden>Are you attending?*</option>
+                        <option>yes, alone, hook me up</option>
+                        <option>yes, with my +1</option>
+                        <option>yes, with my +2</option>
+                        <option>yes, with my +3</option>
+                        <option>no</option>
+                      </select>
+                    </div>
+                  </div>
+                <!-- <fieldset class="pure-group"> -->
+									<!-- <label for="whoelse">Let us know the full name of who is coming with you</label> -->
+									<input type="text" class="form-control" id="whoelse" name="whoelse" placeholder="Let us know the full name of who is coming with you" />
 								</fieldset>
 
-								<fieldset class="pure-group">
-									<label for="email">Email:*</label>
-									<input id="email" name="email" type="email" value=""
-									required placeholder="your.name@email.com"/>
-								</fieldset>
+                <p></p>
+
+                <fieldset class="pure-group">
+                <label for="validationCustom01">We are providing on-site accommodation for the wedding night to spare you the drive back. Would you like to stay?</label>
+                <div class="form-row">
+                  <div class="col-md-4 mb-3">
+                    <select class="form-control" id="roomsnumber" name="roomsnumber">
+                      <option value="" selected disabled hidden>How many rooms do you need</option>
+                      <option>I won't need any room</option>
+                      <option>I'll need 1 room</option>
+                      <option>I'll need 2 rooms</option>
+                    </select>
+                  </div>
+                </div>
+                </fieldset>
+
+                <p></p>
+
+                <label for="validationCustom01">Tell us about your trip, we would love to hang out with you.</label>
+                <div class="form-row">
+                  <div class="col-md-4 mb-3">
+                    <!-- <label for="whenarriving">When will you arrive in Catalonia?</label> -->
+                    <!-- <input type="date" class="form-control" id="whenarriving" name="whenarriving" placeholder="02/02/2022" onfocus="(this.type='text')"/> -->
+                    <input type="text" class="form-control" id="whenarriving" name="whenarriving" placeholder="When will you arrive in Catalonia?" onfocus="(this.type='date')" onblur="(this.type='text')"/>
+                  </div>
+                  <div class="form-group col-md-4 mb-3">
+                    <!-- <label for="helpneeded">May you need guidance to plan your trip?</label> -->
+                    <select class="form-control" id="helpneeded" name="helpneeded">
+                      <option value="" selected disabled hidden>Do you need help to plan your trip?</option>
+                      <option>yes</option>
+                      <option>no</option>
+                    </select>
+                  </div>
+                </div>
 
 								<fieldset class="pure-group">
-									<label for="attendance">Are you attending?*</label>
-									<input id="attendance" name="attendance"
-									required placeholder="yes/no"/>
-								</fieldset>
-
-								<fieldset class="pure-group">
-									<label for="whoelse">Who else is coming with you?</label>
-									<label for="whoelse">please list the name of each family member</label>
-									<input id="whoelse" name="whoelse" placeholder="" />
-								</fieldset>
-
-								<fieldset class="pure-group">
-									<label for="whenarriving">When will you arrive in Catalonia?</label>
-									<input id="whenarriving" name="whenarriving" placeholder="" />
-								</fieldset>
-
-								<fieldset class="pure-group">
-									<label for="helpneeded">May you need guidance to plan your trip?</label>
-									<input id="helpneeded" name="helpneeded" placeholder="" />
-								</fieldset>
-
-								<fieldset class="pure-group">
-									<label for="message">Message</label>
+									<label for="message">Let us know if you have any food allergies or dietary requirements.</label>
 									<textarea id="message" name="message" placeholder=""></textarea>
 								</fieldset>
 
@@ -427,7 +460,7 @@
 					</div>
 					<div class="text-center col-2"></div>
 				</div>
-		</section> -->
+		</section>
 		<script data-cfasync="false" src="js/rsvp/form-submission-handler.js"></script>
 
     <script src="js/jquery-1.9.1.min.js"></script>
