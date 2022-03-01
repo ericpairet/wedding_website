@@ -108,7 +108,8 @@ a:focus {
 }
 
 .tm-nav-link {
-  color: white;
+  /* color: white; */
+  color: black;
 }
 
 .tm-navbar.scroll .tm-nav-link {
@@ -118,8 +119,8 @@ a:focus {
 .tm-navbar.scroll .tm-nav-link:hover,
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
-  /* color: #3496d8; */
-	color: #000000;
+  color: #3496d8;
+	/* color: #000000; */
 }
 
 .navbar-toggler {
@@ -147,7 +148,8 @@ a:focus {
 	/* background-image: url(../img/20170807_204745.jpg); */
   /* background-image: url(../img/maldives_trans.png); */
   /* background-image: url(../img/new_bigger.jpg); */
-	background-image: url(../img/unpadded.jpg);
+	/* background-image: url(../img/unpadded.jpg); */
+  background-image: url(../img/pano_7_cropped.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   min-height: 375px;
